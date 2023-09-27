@@ -1,15 +1,27 @@
-<!DOCTYPE html>
-<html lang="pl-PL">
-<HTML>
-<HEAD>
-<meta charset="utf-8">
-</HEAD>
-<BODY>
- <a href="z1_bada.html">zadanie 1</a>
-    <br>
- <a href="zadanie2_bada.html">zadanie 2</a>
-     <br>
-  <a href="zadanie3_bada.html">zadanie 3</a>
-     <br>
-</BODY>
-</HTML>
+<html>
+<head>
+<title> Badaniuk 3F2</title>
+<script language="JavaScript">
+function WinOpen_z3()
+{
+window.open("zadanie3_bada.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+}
+function WinOpen_z4()
+{
+window.open("zadanie4_bada.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400");
+}
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<h1><font color="red" size="2cm">Szkielet zaliczeniowy JavaScript Pawlo Badaniuk 3F</font></h1>
+<form>
+<input type="button_z3" name="zadanie3" value="zadanie3-nazwisko ucznia" onclick="WinOpen_z3(' ')">
+<input type="button_z4" name="zadanie4" value="zadanie4-nazwisko ucznia" onclick="WinOpen_z4(' ')">
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</form>
+</body>
+</html>
