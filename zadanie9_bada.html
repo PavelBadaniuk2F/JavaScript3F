@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <head>
-<script type="text/javascript">
-function show_confirm()
-{
-var r=confirm("Naciśnij klawisz");
-if (r==true)
-{ document.write("Nacisnąłeś OK!"); }
-else
-{ document.write("Nacisnąłeś Cancel!"); }
-}
-  </script>
+ <script type="text/javascript">
+ function show_prompt()
+ {
+ var name=prompt("Pawlo","Badaniuk");
+ if (name!=null && name!="")
+ {
+ document.write("Witaj " + name + "! jak się masz?");
+ }
+ }
+ </script>
 </head>
 <body>
+   <input type="button" onclick="show_prompt()" value="Pokaż prompt box" /> 
+  <b>Zastosowanie:</b>
+  <p>Jest używany kiedy użytkownik ma wpisać coś np. zanim wejdzie w dany moduł strony. Np. hasło.
+Użytkownik po wpisaniu wartość może nacisnął „OK.” albo „Cancel” Jeżeli użytkownik kliknie „OK.”
+metoda zwraca wpisaną wartość, a w przeciwnym wypadku zwraca null.</p>
 </body>
 </html>
